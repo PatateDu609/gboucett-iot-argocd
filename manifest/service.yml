@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+
+kind: Service
+metadata:
+  labels:
+    app: iot-p3
+  name: app-service
+spec:
+  selector:
+    app: iot-p3
+  ports:
+  - port: 8888
